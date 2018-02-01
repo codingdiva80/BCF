@@ -26,24 +26,26 @@ body{
 	box-shadow: 0 7px 7px rgba(0,0,0,0.15);	
 }
 /* NAVBAR */
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 100%;
+}
 .navbar {
 	display: flex;
 	list-style: none;
 	margin-top: 30px;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	width: 100%;
-	justify-content: flex-end;
 }
 .navbar a {
 	color: #047001;
-	font-size: 17px;
+	font-size: 1.2em;
 	text-decoration: none;
 	padding: 20px;
 }
 label {
     margin: 0 40px 0 0;
-    font-size: 26px;
+    font-size: 1.625em;
     line-height: 70px;
     display: none;
     width: 26px;
@@ -93,7 +95,7 @@ label {
 	z-index:2;
 }  
 .landing-content h1{
-	font-size:50px;
+	font-size:3.125em;
 	margin-bottom:0;
 }
 .landing-content p{
@@ -115,14 +117,10 @@ label {
 }
 .section-a h1 {
 	color: #054917;
-	font-size: 30px;
-}
-.section-a h1 {
-	color: #054917;
-	font-size: 30px;
+	font-size: 1.875em;
 }
 .section-b .fa {
-	font-size: 50px;
+	font-size: 3.125em;
 	color: #054917;		
 	text-align: center;
 	width: 100%;
@@ -156,15 +154,15 @@ label {
 .section-contact div {
 	background-color: rgba(0,0,0,0.7);
 	width: 50%;
-	height: 45vh;
+	/* height: 45vh; */
 }
 .section-contact h3, h4 {
 	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .section-contact h3 {
-	font-size: 30px;	
+	font-size: 1.875em;	
 }
 .more-info-hidden {
 	display: none;
@@ -186,20 +184,25 @@ label {
 }
 
 @media all and (max-width: 500px) {
-	#logo {
-		margin-left: 0;
-	}
+	/* HEADER */
 	.menu {
 		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 3%;	
+	}
+	.nav {
+		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;				
 	}
 	label {
-        display: block;
+		display: block;
+		text-align: end;
         cursor: pointer;
     }
     .navbar {
+		display: flex;
+		justify-content: center;
         text-align: center;
         width: 100%;
         display: none;
@@ -208,59 +211,71 @@ label {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-     
     }
     #toggle:checked + .navbar {
         display: block;
-    }
-    
+	}
+	/* LANDING PAGE*/
 	.landing-content h1{
-		font-size:30px;
+		font-size:2em;
 	}
 	.landing-content p{
 		font-size:1rem;
+		display:block;
+		padding-bottom:2rem;
 	}
+	/* WELCOME SECTION */
 	.section{
 		margin: 20px;
 	}
+	.section-a h1 {
+		font-size: 1em;
+	}
+	/* SERVICES */
 	.services {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 	.services div {
-		width: 80%;
-		padding: 20px;
-		margin: 10px; 
+		width: 95%;
+		margin-bottom: 5%; 
+		text-align: center;
 	}
+	/* CONTACT */
 	.section-contact {
-		display: flex;
+		background: url("../images/business-meeting-small.jpg") no-repeat;
+		background-size: cover; 
 		width: 100%;
 		margin: 0;
 	}
 	.section-contact div {
-		padding: 10px;
-		width: 100%;
+		width: 70%;
 		height: auto;
 	}
 	.section-contact h3 {
-		font-size: 20px;
+		font-size: 1em;
 	}
 	.section-contact h4 {
-		font-size: 10px;
+		font-size: 0.5em;
 	}	
+	/* FOOTER */
 	.footer p {
 		font-size: 0.65rem;
 	}
 }
-@media all and (max-width: 800px) {
-	.landing-content {
-		padding-top: 30px;
+@media all and (max-width: 770px) {
+	.navbar {
+		width: 100%;
+		justify-content: flex-end;
+		margin-right: 15px;
 	}
-}
-@media all and (max-height: 960px) {
-	.section-contact div {
-		width: 50%;	
-		height: auto;
+	.navbar a {
+		padding: 20px 8px;
 	}
+	.section{
+		padding:30px;
+	}
+
 }
+
