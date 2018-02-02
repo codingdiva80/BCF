@@ -110,6 +110,7 @@ label {
 	padding: 1rem 2rem;
 	text-decoration: none;
 	border: none;
+	cursor: pointer;
 }
 /* WELCOME SECTION */
 .section{
@@ -225,9 +226,14 @@ label {
 		padding-bottom:2rem;
 	}
 	/* WELCOME SECTION */
-	.section{
+	/* .section{
 		margin: 20px;
+		padding: 5px;
+		
 	}
+	.section-a {
+		padding: 5px;
+	} */
 	.section-a h1 {
 		font-size: 1em;
 	}
