@@ -120,12 +120,6 @@ label {
 	color: #054917;
 	font-size: 1.875em;
 }
-.section-b .fa {
-	font-size: 3.125em;
-	color: #054917;		
-	text-align: center;
-	width: 100%;
-}
 /* SERVICES */
 .services {
 	display: flex;
@@ -142,6 +136,17 @@ label {
 	text-align: center;
 	color: #666;
 }
+.services-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+	border: none;
+	color: #054917;		
+	text-align: center;
+	width: 100%;
+}
+
 /* CONTACT */
 .section-contact {
 	background: url("../images/business-meeting2.png") no-repeat;
@@ -183,7 +188,52 @@ label {
 	font-size: 0.85rem;
 	font-weight: bold;
 }
-
+/* TESTIMONIALS */
+.testimonials-section {
+	display: flex;
+	flex-direction: column;	
+	width: 100%;
+	justify-content: center;	
+	align-items: center;	
+	padding: 20px;
+}
+#testimonials-container-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.testimonials-div {
+	width: 40%;
+}
+.testimonials-author {
+	color: #047001;
+	font-style: italic;
+	text-align: end;
+}
+#testimonials-container-2 {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+.asterisk-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: .5em;
+	color: #054917;		
+	width: 100%;
+	margin-right: 5px;
+}
+.asterisk-div h1 {
+	font-size: 3em;
+}
+.arrow-down-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #054917;		
+	
+}
 @media all and (max-width: 500px) {
 	/* HEADER */
 	.menu {
@@ -216,6 +266,9 @@ label {
     #toggle:checked + .navbar {
         display: block;
 	}
+	.mobile-spacer {
+		height: 350px;
+	}
 	/* LANDING PAGE*/
 	.landing-content h1{
 		font-size:2em;
@@ -226,14 +279,6 @@ label {
 		padding-bottom:2rem;
 	}
 	/* WELCOME SECTION */
-	/* .section{
-		margin: 20px;
-		padding: 5px;
-		
-	}
-	.section-a {
-		padding: 5px;
-	} */
 	.section-a h1 {
 		font-size: 1em;
 	}
@@ -269,6 +314,10 @@ label {
 	.footer p {
 		font-size: 0.65rem;
 	}
+	/* TESTIMONIALS */
+	.testimonials-div {
+		width: 80%;
+	}
 }
 @media all and (max-width: 770px) {
 	.navbar {
@@ -279,9 +328,9 @@ label {
 	.navbar a {
 		padding: 20px 8px;
 	}
-	.section{
-		padding:30px;
-	}
-
 }
-
+@media all and (max-width: 1030px) {
+	.testimonials-div {
+		width: 80%;
+	}
+}
