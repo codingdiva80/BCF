@@ -253,7 +253,6 @@ label {
 		display: block;
 		text-align: end;
 		cursor: pointer;
-		border:1px solid red;
     }
     .navbar {
 		margin-bottom:0px;
