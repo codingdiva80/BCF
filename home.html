@@ -17,14 +17,16 @@
 				<img src="assets/images/logo.png" alt="main-logo">
 			</div>
 			<div class="nav">
-				<label for="toggle">&#9776;</label>
+				<label for="toggle" id="toggle-label">&#9776;</label>
 				<input type="checkbox" id="toggle"/>
-				<div class="navbar">	
-					<a href="#home">Home</a>
-					<a href="#about">About</a>
-					<a href="#services">Services</a>
-					<a href="#testimonials">Testimonials</a>					
-					<a href="#contact">Contact</a>
+				<div class="navbar">
+					<div id="navMenu">
+						<a href="#home">Home</a>
+						<a href="#about">About</a>
+						<a href="#services">Services</a>
+						<a href="#testimonials">Testimonials</a>					
+						<a href="#contact">Contact</a>
+					</div>	
 				</div>	
 			</div>
 		</header>
@@ -216,7 +218,7 @@
 			<p>©2018 Business Cash Funds. All Rights Reserved.</p>
 		</footer>
 		<script type="text/javascript" src="assets/js/main.js"></script>
-		<script>displayTestimonials()</script>
+		<script>init()</script>
 	</div>
 </body>
 </html>

@@ -35,7 +35,8 @@ body{
 .navbar {
 	display: flex;
 	list-style: none;
-	margin-top: 30px;
+	margin-top: 40px;
+	margin-bottom:30px;
 }
 .navbar a {
 	color: #047001;
@@ -240,7 +241,9 @@ label {
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding: 3%;	
+		padding: 3%;
+		padding-bottom:none;	
+		display: flex;
 	}
 	.nav {
 		display: flex;
@@ -252,20 +255,26 @@ label {
         cursor: pointer;
     }
     .navbar {
-		display: flex;
-		justify-content: center;
-        text-align: center;
-        width: 100%;
-        display: none;
+		margin-bottom:0px;
     }
     .navbar a {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-    }
-    #toggle:checked + .navbar {
-        display: block;
 	}
+	
+	.navMenuShow {
+		display: block;
+		width:200%;
+		justify-content:center;
+		text-align:center;
+		margin-left:-80%;
+		margin-top:-50px;
+	}
+	.navMenuHide {
+		display: none;
+	}
+    
 	.mobile-spacer {
 		height: 350px;
 	}
