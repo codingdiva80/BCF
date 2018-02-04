@@ -19,8 +19,18 @@ function showHideMenu(){
     let hamburgerMenu = document.querySelector("#toggle-label");
     let navMenu = document.querySelector("#navMenu");
     navMenu.addEventListener(touchEvent, (e)=>{
-        document.location.href = e.target.href;
         toggleMenu();
+        let location = e.target.href.substr(e.target.href.indexOf("#")+1);
+        console.log(location);
+        let anchorTags = document.querySelectorAll("a");
+        let anchorTag = null;
+        let element = [].forEach.call(anchorTags, (tag) => {
+            if(tag.name === location){
+                anchorTag = tag;
+            }
+        });
+        anchorTag.scrollIntoView();
+        window.scrollBy(0, -100);
     });
     hamburgerMenu.addEventListener(touchEvent, (e)=>{
         toggleMenu();
