@@ -71,11 +71,3 @@ function toggleMenu(){
     console.log(navMenu.getAttribute("class"));
 }
 
-function showModal(){
-
-}
-
-(function (e){
-    p||(p=t("ember-routing-handlebars/helpers/action").ActionHelper);
-    var n=T(e.currentTarget).attr("data-ember-action"),i=p.registeredActions[n];
-return i&&i.eventName===r?i.handler(e):void 0});
