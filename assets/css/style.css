@@ -147,6 +147,15 @@ label {
 	text-align: center;
 	width: 100%;
 }
+.learn-more {
+	border:none!important;
+	font-size:.9em;
+	border-radius:none!important;
+	cursor:pointer!important;
+	margin-bottom:0px!important;
+	margin-left:10px!important;
+	text-align:center!important;
+}
 
 /* CONTACT */
 .section-contact {

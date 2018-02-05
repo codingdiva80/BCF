@@ -1,5 +1,32 @@
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
+let services = [
+    { 
+        id: "business-credit-recurring-payment-plan-mo",
+        price: "$1200",
+        title: "Business Credit Consulting Payment Plan Initial Payment - Regular",
+        qty: 1
+    },
+    { 
+        id: "business-credit-consulting-payment",
+        price: "$3995",
+        title: "Business Credit Consulting Payment",
+        qty: 1
+    },
+    { 
+        id: "initial-payment-full-payment-business-credit-consulting",
+        price: "$2995",
+        title: "Initial Payment- Full Payment - Business Credit Consulting",
+        qty: 1
+    },
+    { 
+        id: "business-credit-recurring-payment-plan-mo",
+        price: "$800",
+        title: "Business Credit Recurring payment plan 7 Mo.",
+        qty: 1
+    }
+]
+
 function init(){
     displayTestimonials();        
     showHideMenu();
@@ -43,3 +70,12 @@ function toggleMenu(){
     navMenu.setAttribute("class", (d === "navMenuHide") ? "navMenuShow" : "navMenuHide");
     console.log(navMenu.getAttribute("class"));
 }
+
+function showModal(){
+
+}
+
+(function (e){
+    p||(p=t("ember-routing-handlebars/helpers/action").ActionHelper);
+    var n=T(e.currentTarget).attr("data-ember-action"),i=p.registeredActions[n];
+return i&&i.eventName===r?i.handler(e):void 0});
